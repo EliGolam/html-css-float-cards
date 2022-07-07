@@ -1,21 +1,24 @@
 /* Root pseudoclass custom properties: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
 :root {
     /* Website Color Scheme */
-    --clr-primary: rgba(87, 242, 178, 1);
-    --clr-secondary: rgba(250, 174, 95, 1);
+    --clr-primary: rgba(197, 39, 74, 1);
+    --clr-secondary: rgba(23, 23, 34, 1);
 
     --clr-neutral-white: rgba(246, 242, 233, 1);
     --clr-neutral-black: rgba(25, 25, 25, 1);
     --clr-neutral-grey: rgba(88, 89, 90, 1);
 
-    --fontfamily-primary: Arial, Helvetica, sans-serif;
+    --fontfamily-primary: 'Poppins', Arial, Helvetica, sans-serif;
+    --fontfamily-title: 'Fredoka One', cursive;
+    
 
     --fontweight-thin: 200;
     --fontweight-normal: 400;
-    --fontweight-heavy: 700;
+    --fontweight-bold: 600;
+    --fontweight-heavy: 800;
 
     --fontsize-small: 0.7rem;
-    --fontsize-normal: 1.1rem;
+    --fontsize-normal: 0.9rem;
     --fontsize-large: 2rem;
     --fontsize-title: 3rem;
 
@@ -23,9 +26,23 @@
     --flow-spacer: 1em;
 }
 
+/* Macro choices */
+body {
+    /* SIZE */
+    max-width: 800px;
+    /* PADDING & MARGINS */
+    padding: 2rem 2rem;
+    margin: 0 auto;
+    /* FONTS */
+    font-family: var(--fontfamily-primary);
+    font-size: var(--fontsize-normal);
+}
+
+#title { font-family: var(--fontfamily-title); }
+
+.hidden-content { display: none; }
 
 /* COMPOSITION: Macrolevel design choises that defines the skeleton of the webpage and basic composition within components */
-/* Page Layout choices */
 
 /* Component Layout choices */
 
@@ -33,13 +50,14 @@
 /* Color schemes divided into scalable Design Tokens: allows to apply a specific set of colours without repetition */
 .background-primary { background-color: var(--clr-neutral-white); }
 
-.background-secondary { background-color: var(--clr-neutral-black); }
+.background-secondary { background-color: var(--clr-secondary); }
 
-.color-primary { color: var(--clr-neutral-black); }
+.color-primary { color: var(--clr-primary); }
 
 .color-secondary {  color: var(--clr-neutral-white); }
 
 .color-neutral { color: var(--clr-neutral-grey); }
+
 
 /* BLOCKS: component specific rules */
 
