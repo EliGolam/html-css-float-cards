@@ -18,7 +18,7 @@
     --fontweight-heavy: 800;
 
     --fontsize-small: 0.7rem;
-    --fontsize-normal: 0.9rem;
+    --fontsize-normal: 0.7rem;
     --fontsize-large: 2rem;
     --fontsize-title: 3rem;
 }
@@ -35,7 +35,7 @@ body {
     font-size: var(--fontsize-normal);
 }
 
-#title { font-family: var(--fontfamily-title); }
+#title { font-family: var(--fontfamily-title); text-align: center; margin-bottom: 2rem;}
 
 .hidden-content { display: none; }
 
@@ -55,8 +55,7 @@ body {
     border: 2px solid yellow;
 }
 
-.float-card__img {
-    
+.card__img {
     width: 40%;
 }
 
@@ -76,6 +75,7 @@ body {
     display: table;
     clear: both;
 }
+
 
 /* Color schemes divided into scalable Design Tokens: allows to apply a specific set of colours without repetition */
 .background-primary { background-color: var(--clr-neutral-white); }
