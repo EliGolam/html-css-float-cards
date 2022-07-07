@@ -6,7 +6,7 @@
 
     --clr-neutral-white: rgba(246, 242, 233, 1);
     --clr-neutral-black: rgba(25, 25, 25, 1);
-    --clr-neutral-grey: rgba(88, 89, 90, 1);
+    --clr-neutral-grey: rgba(88, 89, 90, 0.6);
 
     --fontfamily-primary: 'Poppins', Arial, Helvetica, sans-serif;
     --fontfamily-title: 'Fredoka One', cursive;
@@ -21,6 +21,8 @@
     --fontsize-normal: 0.7rem;
     --fontsize-large: 1rem;
     --fontsize-title: 2.5rem;
+
+    --flow-margin: 2rem;
 }
 
 /* Macro choices */
@@ -39,11 +41,12 @@ body {
     font-family: var(--fontfamily-title); 
     font-size: var(--fontsize-title);
     text-align: center; 
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
 }
 
 #subtitle {
     font-size: var(--fontsize-large);
+    text-align: center;
 }
 
 .hidden-content { display: none; }
@@ -56,9 +59,7 @@ body {
 }
 
 .card { 
-    padding: 0 1rem 0 0;
     margin: 1.5rem 1rem;
-
     width: calc(100% / 3 - 2rem);
 
     border-radius: 10px;
@@ -68,32 +69,27 @@ body {
 	
 .card__img {
     max-width: 38%;
+    margin-right: 0.7rem;
 
     border-radius: 10px 0 0 10px;
 }
 
-.card > .float {
-    margin-right: 0.7rem;
+.card section {
+    padding: 1rem 0;
 }
 
-.card div {
-    margin: 1rem 0;
-}
-
-.card div > * {
+.card section > * {
     margin: 0.3rem 0;
 }
 
+
 /* UTILITIES: One job, done well. It performs one logical job: formatting, design, shape, font and element colours  */
-.container__card {
+.container__element {
     background-color: var(--clr-secondary);
     color: var(--clr-neutral-white);
 }
 
-.float {
-    float: left;
-}
-
+.float { float: left; }
 
 .clearfix::after {
     content: "";
@@ -101,6 +97,13 @@ body {
     clear: both;
 }
 
+.flow-margin {
+    margin: var(--flow-margin) 0;
+}
+
+.element-shadow {
+    box-shadow: 3px 2.5px 4px var(--clr-neutral-grey);
+}
 
 /* Color schemes divided into scalable Design Tokens: allows to apply a specific set of colours without repetition */
 .background-primary { background-color: var(--clr-neutral-white); }
