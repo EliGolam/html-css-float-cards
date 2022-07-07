@@ -1,7 +1,7 @@
 /* Root pseudoclass custom properties: https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties */
 :root {
     /* Website Color Scheme */
-    --clr-primary: rgba(197, 39, 74, 1);
+    --clr-primary: rgb(201, 69, 98);
     --clr-secondary: rgba(23, 23, 34, 1);
 
     --clr-neutral-white: rgba(246, 242, 233, 1);
@@ -21,9 +21,6 @@
     --fontsize-normal: 0.9rem;
     --fontsize-large: 2rem;
     --fontsize-title: 3rem;
-
-    --gap: 1rem;
-    --flow-spacer: 1em;
 }
 
 /* Macro choices */
@@ -43,20 +40,53 @@ body {
 .hidden-content { display: none; }
 
 /* COMPOSITION: Macrolevel design choises that defines the skeleton of the webpage and basic composition within components */
-
 /* Component Layout choices */
+.container {
+    border: 2px solid red;
+    margin: 2rem -1rem;
+}
+
+.card { 
+    padding: 0 1rem 0 0;
+    margin: 1.5rem 1rem;
+
+    width: calc(100% / 3 - 2rem);
+
+    border: 2px solid yellow;
+}
+
+.float-card__img {
+    
+    width: 40%;
+}
 
 /* UTILITIES: One job, done well. It performs one logical job: formatting, design, shape, font and element colours  */
+.container__card {
+    background-color: var(--clr-secondary);
+    color: var(--clr-neutral-white);
+}
+
+.float {
+    float: left;
+}
+
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* Color schemes divided into scalable Design Tokens: allows to apply a specific set of colours without repetition */
 .background-primary { background-color: var(--clr-neutral-white); }
 
 .background-secondary { background-color: var(--clr-secondary); }
 
-.color-primary { color: var(--clr-primary); }
+.text-color-primary { color: var(--clr-primary); }
 
-.color-secondary {  color: var(--clr-neutral-white); }
+.text-color-secondary {  color: var(--clr-neutral-white); }
 
-.color-neutral { color: var(--clr-neutral-grey); }
+.text-color-neutral { color: var(--clr-neutral-grey); }
 
 
 /* BLOCKS: component specific rules */
