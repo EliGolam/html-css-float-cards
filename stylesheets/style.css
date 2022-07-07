@@ -68,12 +68,12 @@ body {
     max-width: 38%;
     margin-right: 0.7rem;
 
-    border-radius: 10px 0 0 10px;
+    border-radius: 10px 0 0 10px; /* Rounds the left borders of the image to match the card's border shape*/
 }
 
-.card section { padding: 1rem 0; }
+.card section { padding: 1rem 0; } /* Adds some space at the top and bottom of each section */
 
-.card section > * { margin: 0.3rem 0; }
+.card section > * { margin: 0.3rem 0; } /* Adds spacing between the children elements of the section within the card */
 
 .card__member { font-size: var(--fontsize-large); }
 
@@ -84,17 +84,17 @@ body {
     color: var(--clr-neutral-white);
 }
 
-.float { float: left; }
+.float { float: left; } /* adds the float property */
 
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
-}
+} /* fixes float issues */
 
-.flow-margin { margin: var(--flow-margin) 0; }
+.flow-margin { margin: var(--flow-margin) 0; } /* adds some simple padding on top */
 
-.element-shadow { box-shadow: 3px 2.5px 4px var(--clr-neutral-grey); }
+.element-shadow { box-shadow: 3px 2.5px 4px var(--clr-neutral-grey); } /* creates a small shadow*/
 
 .large-font { font-size: var(--fontsize-large);}
 
