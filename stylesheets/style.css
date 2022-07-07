@@ -19,14 +19,14 @@
 
     --fontsize-small: 0.7rem;
     --fontsize-normal: 0.7rem;
-    --fontsize-large: 2rem;
-    --fontsize-title: 3rem;
+    --fontsize-large: 1rem;
+    --fontsize-title: 2.5rem;
 }
 
 /* Macro choices */
 body {
     /* SIZE */
-    max-width: 800px;
+    max-width: 1000px;
     /* PADDING & MARGINS */
     padding: 2rem 2rem;
     margin: 0 auto;
@@ -35,14 +35,23 @@ body {
     font-size: var(--fontsize-normal);
 }
 
-#title { font-family: var(--fontfamily-title); text-align: center; margin-bottom: 2rem;}
+#title { 
+    font-family: var(--fontfamily-title); 
+    font-size: var(--fontsize-title);
+    text-align: center; 
+    margin-bottom: 2rem;
+}
+
+#subtitle {
+    font-size: var(--fontsize-large);
+}
 
 .hidden-content { display: none; }
 
 /* COMPOSITION: Macrolevel design choises that defines the skeleton of the webpage and basic composition within components */
 /* Component Layout choices */
 .container {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     margin: 2rem -1rem;
 }
 
@@ -52,11 +61,27 @@ body {
 
     width: calc(100% / 3 - 2rem);
 
-    border: 2px solid yellow;
+    border-radius: 10px;
+/* 
+    border: 2px solid yellow; */
 }
 	
 .card__img {
-    width: 40%;
+    max-width: 38%;
+
+    border-radius: 10px 0 0 10px;
+}
+
+.card > .float {
+    margin-right: 0.7rem;
+}
+
+.card div {
+    margin: 1rem 0;
+}
+
+.card div > * {
+    margin: 0.3rem 0;
 }
 
 /* UTILITIES: One job, done well. It performs one logical job: formatting, design, shape, font and element colours  */
