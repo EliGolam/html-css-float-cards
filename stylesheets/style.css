@@ -26,7 +26,7 @@
 }
 
 /* Macro choices */
-body {
+.container {
     /* SIZE */
     max-width: 900px;
     margin: 0 auto;
@@ -51,7 +51,7 @@ body {
 
 /* COMPOSITION: Macrolevel design choises that defines the skeleton of the webpage and basic composition within components */
 /* Component Layout choices */
-.container {
+.card-container {
     /* border: 2px solid red; */
     margin: 2rem -1rem;
 }

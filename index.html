@@ -23,78 +23,81 @@
 
 <!-- BODY -->
 <body>
+    <!-- div CONTAINER including HEADER + MAIN -->
+    <div class="container">
+        <!-- HEAD: H1 [meet our team] + P [subtitle/description] -->
+        <header>
+            <h1 id="title" class="text-color-primary flow-margin">Meet our team</h1>
+            <p id="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia alias aspernatur accusantium perferendis ea rerum quam tenetur ducimus delectus corrupti ipsa earum, adipisci similique neque, obcaecati officia odio quibusdam maiores!</p>
+        </header>
 
-    <!-- HEAD: H1 [meet our team] + P [subtitle/description] -->
-    <header>
-        <h1 id="title" class="text-color-primary flow-margin">Meet our team</h1>
-        <p id="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia alias aspernatur accusantium perferendis ea rerum quam tenetur ducimus delectus corrupti ipsa earum, adipisci similique neque, obcaecati officia odio quibusdam maiores!</p>
-    </header>
+        <!-- MAIN holding a div card CONTAINER with the cards -->
+        <main>
+            <!-- div CARD-CONTAINER: 6 FLOAT cards -->
+            <div class="card-container  clearfix">
+                <!-- Hidden H2 title for accessibility -->
+                <h2 class="hidden-content">Team Members</h2>
 
-    <!-- MAIN: div CONTAINER with the cards -->
-    <main>
-        <!-- div CONTAINER: 6 FLOAT cards -->
-        <div class="container  clearfix">
-            <!-- Hidden H2 title for accessibility -->
-            <h2 class="hidden-content">Team Members</h2>
+                <!-- 6 CARDS each with an IMG and a SECTION containing an H3 -->
+                <div class="card  container__element element-shadow  float clearfix">
+                    <img src="./img/female1.png" alt="Laura Rossi" class="card__img float clearfix">
+                    <section>
+                        <h3 class="card__member">Laura Rossi</h3>
+                        <p class="member-role">Front-end Developer</p>
+                        <a class="member-email  text-color-primary" href="#">laurarossi@team.com</a>
+                    </section>
+                </div>
 
-            <!-- 6 CARDS each with an IMG and a SECTION containing an H3 -->
-            <div class="card  container__element element-shadow  float clearfix">
-                <img src="./img/female1.png" alt="Laura Rossi" class="card__img float clearfix">
-                <section>
-                    <h3 class="card__member">Laura Rossi</h3>
-                    <p class="member-role">Front-end Developer</p>
-                    <a class="member-email  text-color-primary" href="#">laurarossi@team.com</a>
-                </section>
+                <div class="card  container__element element-shadow float  clearfix">
+                    <img src="./img/male1.png" alt="Marco Bianchi" class="card__img float clearfix">
+                    <section>
+                        <h3 class="card__member">Marco Bianchi</h3>
+                        <p class="member-role">Designer</p>
+                        <a class="member-email  text-color-primary" href="#">marcobianchi@team.com</a>
+                    </section>
+                </div>
+
+                <div class="card  container__element element-shadow float  clearfix">
+                    <img src="./img/female2.png" alt="Marta Ipsum" class="card__img float clearfix">
+                    <section>
+                        <h3 class="card__member">Marta Ipsum</h3>
+                        <p class="member-role">SEO specialist</p>
+                        <a class="member-email  text-color-primary" href="#">martaipsum@team.com</a>
+                    </section>
+                </div>
+
+                <div class="card  container__element element-shadow float  clearfix">
+                    <img src="./img/male2.png" alt="Giorgio Verdi" class="card__img float clearfix">
+                    <section>
+                        <h3 class="card__member">Giorgio Verdi</h3>
+                        <p class="member-role">Back-end Designer</p>
+                        <a class="member-email  text-color-primary" href="#">giorgioverdi@team.com</a>
+                    </section>
+                </div>
+
+                <div class="card  container__element element-shadow float  clearfix">
+                    <img src="./img/female3.png" alt="Daniela Amet" class="card__img float clearfix">
+                    <section>
+                        <h3 class="card__member">Daniela Amet</h3>
+                        <p class="member-role">Analyst</p>
+                        <a class="member-email  text-color-primary" href="#">danielaamet@team.com</a>
+                    </section>
+                </div>
+
+                <div class="card  container__element element-shadow float  clearfix">
+                    <img src="./img/male3.png" alt="Roberto Lorem" class="card__img float clearfix">
+                    <section>
+                        <h3 class="card__member">Roberto Lorem</h3>
+                        <p class="member-role">Project Manager</p>
+                        <a class="member-email  text-color-primary" href="#">robertolorem@team.com</a>
+                    </section>
+                </div>
             </div>
-
-            <div class="card  container__element element-shadow float  clearfix">
-                <img src="./img/male1.png" alt="Marco Bianchi" class="card__img float clearfix">
-                <section>
-                    <h3 class="card__member">Marco Bianchi</h3>
-                    <p class="member-role">Designer</p>
-                    <a class="member-email  text-color-primary" href="#">marcobianchi@team.com</a>
-                </section>
-            </div>
-
-            <div class="card  container__element element-shadow float  clearfix">
-                <img src="./img/female2.png" alt="Marta Ipsum" class="card__img float clearfix">
-                <section>
-                    <h3 class="card__member">Marta Ipsum</h3>
-                    <p class="member-role">SEO specialist</p>
-                    <a class="member-email  text-color-primary" href="#">martaipsum@team.com</a>
-                </section>
-            </div>
-
-            <div class="card  container__element element-shadow float  clearfix">
-                <img src="./img/male2.png" alt="Giorgio Verdi" class="card__img float clearfix">
-                <section>
-                    <h3 class="card__member">Giorgio Verdi</h3>
-                    <p class="member-role">Back-end Designer</p>
-                    <a class="member-email  text-color-primary" href="#">giorgioverdi@team.com</a>
-                </section>
-            </div>
-
-            <div class="card  container__element element-shadow float  clearfix">
-                <img src="./img/female3.png" alt="Daniela Amet" class="card__img float clearfix">
-                <section>
-                    <h3 class="card__member">Daniela Amet</h3>
-                    <p class="member-role">Analyst</p>
-                    <a class="member-email  text-color-primary" href="#">danielaamet@team.com</a>
-                </section>
-            </div>
-
-            <div class="card  container__element element-shadow float  clearfix">
-                <img src="./img/male3.png" alt="Roberto Lorem" class="card__img float clearfix">
-                <section>
-                    <h3 class="card__member">Roberto Lorem</h3>
-                    <p class="member-role">Project Manager</p>
-                    <a class="member-email  text-color-primary" href="#">robertolorem@team.com</a>
-                </section>
-            </div>
-        </div>
-        <!-- end div CONTAINER -->
-    </main>
-    <!-- end MAIN -->
+            <!-- end div CARD-CONTAINER -->
+        </main>
+        <!-- end MAIN -->
+    </div>
+    <!-- end div CONTAINER -->
 </body>
 
 </html>
