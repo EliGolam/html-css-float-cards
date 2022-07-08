@@ -6,7 +6,7 @@
 
     --clr-neutral-white: rgba(246, 242, 233, 1);
     --clr-neutral-black: rgba(25, 25, 25, 1);
-    --clr-neutral-grey: rgba(88, 89, 90, 0.6);
+    --clr-neutral-grey: rgba(192, 194, 196, 0.6);
 
     --fontfamily-primary: 'Poppins', Arial, Helvetica, sans-serif;
     --fontfamily-title: 'Fredoka One', cursive;
@@ -71,7 +71,8 @@
     border-radius: 10px 0 0 10px; /* Rounds the left borders of the image to match the card's border shape*/
 }
 
-.card section { padding: 1rem 0; } /* Adds some space at the top and bottom of each section */
+/* .card section { padding: 1rem 0; } Adds some space at the top and bottom of each section */
+.card section { padding: 0.5rem 0; }
 
 .card section > * { margin: 0.3rem 0; } /* Adds spacing between the children elements of the section within the card */
 
@@ -83,6 +84,10 @@
     background-color: var(--clr-secondary);
     color: var(--clr-neutral-white);
 }
+
+.member-email { text-decoration: none;}
+
+.member-email:hover { color: var(--clr-primary); text-decoration: underline;}
 
 .float { float: left; } /* adds the float property */
 
@@ -112,3 +117,6 @@
 /* BLOCKS: component specific rules */
 
 /* EXCEPTIONS: variations to a block */
+.card:hover {
+    box-shadow: 0 0 4px 5px var(--clr-primary);
+}
